@@ -14,4 +14,4 @@ export const DataLayer = ({initialState, reducer, children}) => (
 )
 
 
-export const useDataLayer = () => useContext(DataLayerContext)
+export const useDataLayerValue = () => useContext(DataLayerContext)

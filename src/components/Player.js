@@ -1,11 +1,23 @@
 import React from 'react';
-import SideBar from "./Sidebar/Sidebar.js";
+import Sidebar from "./Sidebar/Sidebar.js";
+import Footer from './Footer/Footer.js';
+import Body from './Body/Body.js';
+import Row from './Row/Row.js';
 
 const Player = ({spotify}) => {
     return (
-        <div>
-            <h1>Player</h1>
-            <SideBar/>
+        <div className="main-player">
+           
+           <div id="side-bar">
+
+            <Row />
+           </div>
+        
+            <div className="main-content">
+
+            <Body spotify={spotify} />
+            <Footer />
+            </div>
         </div>
     )
 }
